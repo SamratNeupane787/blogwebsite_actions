@@ -57,7 +57,7 @@ export async function GET() {
     return NextResponse.json(blogposts, { status: 200 });
   } catch (error) {
     return NextResponse.json(
-      { message: "Error fetching blog posts", error: error.message },
+      { message: "Error fetching blogposts", error: error.message },
       { status: 500 }
     );
   }
